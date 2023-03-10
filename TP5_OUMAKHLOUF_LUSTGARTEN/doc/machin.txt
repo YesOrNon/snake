@@ -1,0 +1,2 @@
+Structure monde
+pomme pas supprimé mais coordonnées modifier (lors de miam miam)

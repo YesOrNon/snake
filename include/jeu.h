@@ -1,8 +1,8 @@
 /* jeu.h */
 #ifndef __JEU__
 #define __JEU__
-#include <serpent.h>
-#include <pomme.h>
+#include "serpent.h"
+#include "pomme.h"
 #define TAILLE_SERPENT 2
 #define NB_POMMES 4
 

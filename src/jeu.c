@@ -2,7 +2,7 @@
  * Creation : 08/03/2023
 */
 
-#include <jeu.h>
+#include "jeu.h"
 
 void deplace_serpent(Tete serp, Case position_serp){
     if(serp->suivant){

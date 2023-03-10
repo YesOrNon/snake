@@ -3,7 +3,7 @@
 */
 
 #include <ncurses.h>
-#include <graphique.h>
+#include "graphique.h"
 
 void interface_afficher_quadrillage(Monde mon){
     for (int i = 0; i < mon.lignes; i += YCASE - 1){

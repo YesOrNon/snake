@@ -3,8 +3,8 @@
 */
 
 #define _DEFAULT_SOURCE
-#include <jeu.h>
-#include <graphique.h>
+#include "jeu.h"
+#include "graphique.h"
 #include <ncurses.h>
 #include <stdlib.h>
 #include <time.h>

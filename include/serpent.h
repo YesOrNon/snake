@@ -1,7 +1,7 @@
 /* serpent.h */
 #ifndef __SNAKE__
 #define __SNAKE__
-#include <pomme.h>
+#include "pomme.h"
 
 /* Représente les quatres directions cardinales */
 typedef enum {

@@ -2,7 +2,7 @@
 #ifndef __GRAPHIQUE__
 #define __GRAPHIQUE__
 
-#include <jeu.h>
+#include "jeu.h"
 #include <ncurses.h>
 #define YCASE 4
 #define XCASE 6

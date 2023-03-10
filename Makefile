@@ -1,14 +1,14 @@
 CC = gcc
-CFLAGS = -std=c17 -pedantic -Wall
-IFLAGS = -I./include
+CFLAGS = -std=c17 -pedantic -Wall -g3 -fsanitize=address
+INC = -I./include
 OBJ = $(SRC:%.c=%.o)
 SRC = src/pomme.c src/serpent.c src/jeu.c src/graphique.c src/main.c
 
 all: $(OBJ)
-	$(CC) $(CFLAGS) $(IFLAGS) $(OBJ) -lncurses -o snake
+	$(CC) $(CFLAGS) $(INC) $(OBJ) -o snake -lncurses
 
-%.o : $(SRC)/%.c
-	$(CC) $(CFLAGS) $(IFLAGS) -o $@ -c $<
+%.o : %.c
+	$(CC) $(CFLAGS) $(INC) -o $@ -c $< 
 
 clean:
 	rm -f *.o
@@ -16,5 +16,4 @@ clean:
 fclean: clean
 	rm -f test
 
-
-## La déprime ##
+re: fclean all
